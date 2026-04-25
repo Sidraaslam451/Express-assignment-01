@@ -1,11 +1,40 @@
 <!DOCTYPE html>
 <html>
-<body>
+<body style="font-family: Arial; background-color: #f4f4f4;">
 
-  <form action="http://localhost:3000/api/users" method="POST">
-    <input type="text" name="name" placeholder="Enter name" />
-    <input type="text" name="age" placeholder="Enter age" />
-    <button type="submit">Send</button>
-  </form>
+  <div style="width: 300px; margin: 100px auto; padding: 20px; background: white; border-radius: 10px; box-shadow: 0 0 10px rgba(0,0,0,0.1);">
+
+    <h2 style="text-align: center;">User Form</h2>
+
+    <form action="http://localhost:3000/api/users" method="POST">
+
+      <input type="text" name="name" placeholder="Enter name"
+        style="width: 100%; padding: 10px; margin-bottom: 10px;" />
+
+      <input type="number" name="age" placeholder="Enter age"
+        style="width: 100%; padding: 10px; margin-bottom: 10px;" />
+
+      <input type="email" name="email" placeholder="Enter email"
+        style="width: 100%; padding: 10px; margin-bottom: 10px;" />
+
+      <input type="text" name="city" placeholder="Enter city"
+        style="width: 100%; padding: 10px; margin-bottom: 10px;" />
+
+      <select name="gender"
+        style="width: 100%; padding: 10px; margin-bottom: 10px;">
+        <option value="">Select Gender</option>
+        <option value="male">Male</option>
+        <option value="female">Female</option>
+      </select>
+
+      <button type="submit"
+        style="width: 100%; padding: 10px; background-color: #4CAF50; color: white; border: none; cursor: pointer;">
+        Send
+      </button>
+
+    </form>
+
+  </div>
+
 </body>
 </html>
