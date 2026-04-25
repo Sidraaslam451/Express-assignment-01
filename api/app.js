@@ -35,6 +35,4 @@ app.delete("/api/users/:id", (req, res) => {
     data: users,
   });
 });
-app.listen(3000, () => {
-  console.log("Server running on port 3000");
-});
+module.exports = app;
